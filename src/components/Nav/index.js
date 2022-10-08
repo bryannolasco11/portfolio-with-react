@@ -1,21 +1,9 @@
 import React from 'react';
 
-function Nav(props) {
-    const {
-      contactSelected,
-      setContactSelected
-    } = props;
-
 function Nav() {
     return (
-        <header>
-            <h2>
-                <a href="/">
-                    🏀 Bryan Nolasco 🏀
-                </a>
-            </h2>
+        <div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            
                 <ul className='flex-row'>
                     <li className='mx-2'>
                         <a href='#about'>
@@ -27,8 +15,8 @@ function Nav() {
                     </li>
                 </ul>
             </nav>
-        </header>
+        </div>
     );
 }
-}
+
 export default Nav;
