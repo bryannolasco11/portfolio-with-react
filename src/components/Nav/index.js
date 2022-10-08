@@ -1,5 +1,10 @@
 import React from 'react';
 
+function Nav(props) {
+    const {
+      contactSelected,
+      setContactSelected
+    } = props;
 
 function Nav() {
     return (
@@ -25,5 +30,5 @@ function Nav() {
         </header>
     );
 }
-
+}
 export default Nav;
