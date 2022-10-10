@@ -7,7 +7,6 @@ function About () {
             <h1 id="about">Who am I?</h1>
             <img src={profilePic} className='my-2' style={{ width: "25%"}} alt="profile" />
         </section>
-        
     );
 }
 

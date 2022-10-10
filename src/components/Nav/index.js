@@ -1,29 +1,61 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-function Nav() {
+
+function Nav(props) {
+    console.log(props)
+    const [navPage] = useState([
+        {
+            name: 'about',
+            title: '🏀About Me🏀'
+        },
+        {
+            name: 'portfolio',
+            title: '🏀Portfolio🏀'
+        },
+        {
+            name: 'contact',
+            title: '🏀Contact🏀'
+        },
+        {
+            name: 'resume',
+            title: '🏀Resume🏀'
+        }
+
+
+    ]);
+
+    const {
+        currentPage,
+        setCurrentPage,
+
+    } = props;
+
+    const [currentNavPage, setCurrentNavPage] = useState(navPage[0])
+
     return (
-        <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <ul className='flex-row'>
-                    <li className='mx-2'>
-                        <a href='#about'>
-                            🏀About Me🏀
-                        </a>
+        <nav>
+            <ul>
+                {navPage.map((category) => (
+                    < li
+                        className={`${currentNavPage.name === category.name && 'navActive'
+                            }`}
+                        key={category.name}
+                    >
+                        <span 
+                            onClick={() => {
+                                setCurrentNavPage(category);
+                                setCurrentPage(category.name);
+                        }}>
+                            {category.name}
+                        </span>
                     </li>
-                    <li>
-                        <a href='#contact'>
-                            🏀Contact🏀
-                            </a>
-                    </li>
-                    <li>
-                        <a href='#portfolio'>
-                            🏀Portfolio🏀
-                            </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+                ))}
+            </ul>
+        </nav>
     );
 }
+
+
+
 
 export default Nav;
