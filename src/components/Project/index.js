@@ -11,10 +11,10 @@ const Modal = ({ onClose, currentProject }) => {
         // JSX
         <div className="modalBackdrop">
             <div className='modalContainer'>
-                <h3 className="modalTitle">Name</h3>
+                <h3 className="modalTitle">{name}</h3>
                 <li key={id}>
-                    {name}
-
+                    
+                    {description}
                     <img
                         src={require(`../../assets/images/projectScreenshots/${id}.png`)}
                         alt={name}

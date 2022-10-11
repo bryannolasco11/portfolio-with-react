@@ -1,10 +1,14 @@
+:root {
+  --blue: #0a1045;
+  --babyblue: #00858f;
+  --yellow: #f9e900;
+  --white: #ebe8e6
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--gray);
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
 }
 
 code {
@@ -24,7 +28,7 @@ button[disabled] {
 }
 
 .modalBackdrop {
-	background: rgba(0, 0, 0, .65);
+	background: var(--blue);
 	bottom: 0;
 	left: 0;
 	overflow: auto;
