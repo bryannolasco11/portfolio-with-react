@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Project from '../Project';
+import Modal from '../Project';
 
 function Portfolio(props) {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -51,7 +51,7 @@ function Portfolio(props) {
         
         <section>
             {isModalOpen && (
-            <Project onClose={toggleModal} currentProject={currentProject} />
+            <Modal onClose={toggleModal} currentProject={currentProject} />
             )}
             <ul>
                 {currentProjects.map((project) => {

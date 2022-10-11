@@ -1,28 +1,34 @@
 import React from 'react';
+// import Modal from 'react-bootstrap/Modal';
+// import Button from 'react-bootstrap/Button';
 
-function Project({ onclose, currentProject}) {
+
+
+const Modal = ({ onClose, currentProject }) => {
     console.log(currentProject)
-    const { id, name, description} = currentProject;
+    const { id, name, description } = currentProject;
     return (
         // JSX
-        <div>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Project</button>
+        <div className="modalBackdrop">
+            <div className='modalContainer'>
+                <h3 className="modalTitle">Name</h3>
+                <li key={id}>
+                    {name}
 
-            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <p>
-                            Project Description
-                        </p>
-                        <p>
-                            Project Link
-                        </p>
-                    </div>
-                </div>
+                    <img
+                        src={require(`../../assets/images/projectScreenshots/${id}.png`)}
+                        alt={name}
+                    />
+                </li>
+                <p>{description}</p>
+                <button type="button" onClick={onClose}>
+                    Close this modal
+                </button>
             </div>
+
         </div>
 
     );
 }
 
-export default Project;
+export default Modal;
