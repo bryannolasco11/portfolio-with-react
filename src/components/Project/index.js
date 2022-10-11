@@ -6,21 +6,21 @@ import React from 'react';
 
 const Modal = ({ onClose, currentProject }) => {
     console.log(currentProject)
-    const { id, name, description } = currentProject;
+    const { id, name, description, githubLink, website } = currentProject;
     return (
         // JSX
         <div className="modalBackdrop">
             <div className='modalContainer'>
                 <h3 className="modalTitle">{name}</h3>
                 <li key={id}>
-                    
-                    {description}
                     <img
                         src={require(`../../assets/images/projectScreenshots/${id}.png`)}
                         alt={name}
                     />
                 </li>
                 <p>{description}</p>
+                <p>{githubLink}</p>
+                <p>{website}</p>
                 <button type="button" onClick={onClose}>
                     Close this modal
                 </button>
