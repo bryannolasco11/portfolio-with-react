@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Project from '../Project';
 
 function Portfolio(props) {
-    const currentProject = [
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [currentProject, setCurrentProject] = useState();
+
+    const [currentProjects] = useState([
         {
             id: 1,
             name: "WasteNot",
@@ -32,12 +36,25 @@ function Portfolio(props) {
             name: "Daydreaming",
             description: "Project6 uses these things and does this",
         },
+    
+    ]);
+    
+    //const currentId = currentProjects.filter(proj => proj.id === id);
+    
+    
+    const toggleModal = (project, i) => {
+        setCurrentProject({ ...project, index: i });
+        setIsModalOpen(!isModalOpen)
+    }
 
-    ]
     return (
+        
         <section>
+            {isModalOpen && (
+            <Project onClose={toggleModal} currentProject={currentProject} />
+            )}
             <ul>
-                {currentProject.map((project) => {
+                {currentProjects.map((project) => {
                     return(
                         <li key={project.id}>
                             {project.name}
@@ -46,6 +63,7 @@ function Portfolio(props) {
                         src={require(`../../assets/images/projectScreenshots/${project.id}.png`)}
                         alt={project.name}
                         className="img-thumbnail mx-1"
+                        onClick={() => toggleModal(project)}
                         key={project.id}
                     />
                         </li>
