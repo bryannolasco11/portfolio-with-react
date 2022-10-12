@@ -16,6 +16,8 @@ const Modal = ({ onClose, currentProject }) => {
                     <img
                         src={require(`../../assets/images/projectScreenshots/${id}.png`)}
                         alt={name}
+                        width="800"
+                        height="452"
                     />
                 </li>
                 <p>{description}</p>

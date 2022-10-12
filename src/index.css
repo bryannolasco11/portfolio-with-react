@@ -54,10 +54,12 @@ button[disabled] {
 }
 
 
-
+nav a:hover {
+  text-decoration: none;
+}
 
 .navActive {
-  color: var(--secondary);
+  color: var(--yellow);
 }
 
 button {

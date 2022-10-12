@@ -6,7 +6,12 @@ import Portfolio from '../src/components/Portfolio';
 import Header from '../src/components/Header'
 import Resume from './components/Resume';
 import Contact from './components/Contact';
+import Particles from "react-tsparticles";
+
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 function App() {
   const [currentProject] = useState([
@@ -43,22 +48,24 @@ function App() {
 
 ]);
 
-const [currentPage, setCurrentPage] = useState('about');
-  
+const [currentPage, setCurrentPage] = useState('About');
+
+
   return (
-    <div className='App'>
+
+    <div style={{ width: "100%" }}>
       <Header
         
         setCurrentPage = {setCurrentPage}
         currentPage = {currentPage}
         >
       </Header>
-      <main>
-         {currentPage === 'about' ? (
+      <main style={{ background: "0a1045"}}>
+         {currentPage === 'About' ? (
                <About></About>
-             ) : currentPage === 'portfolio' ? (
+             ) : currentPage === 'Portfolio' ? (
                <Portfolio currentProject={currentProject} />
-             ) : currentPage === 'contact' ? (
+             ) : currentPage === 'Contact' ? (
                <Contact></Contact>
              ) : (
                <Resume></Resume>

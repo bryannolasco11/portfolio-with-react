@@ -1,24 +1,22 @@
 import React, { useState } from 'react';
 
 
-function Nav(props) {
+function Nav (props) {
     console.log(props)
     const [navPage] = useState([
         {
-            name: 'about',
-            title: '🏀About Me🏀'
+            name: 'About',
+            
         },
         {
-            name: 'portfolio',
-            title: '🏀Portfolio🏀'
+           
+            name: 'Portfolio'
         },
         {
-            name: 'contact',
-            title: '🏀Contact🏀'
+            name: 'Contact'
         },
         {
-            name: 'resume',
-            title: '🏀Resume🏀'
+           name: 'Resume'
         }
 
 
@@ -33,10 +31,12 @@ function Nav(props) {
     const [currentNavPage, setCurrentNavPage] = useState(navPage[0])
 
     return (
-        <nav>
-            <ul>
+        <nav bg="dark" variant="dark">
+         <div class="container-fluid">
+         <ul class="nav navbar-nav">
                 {navPage.map((category) => (
                     < li
+                    class="nav-link active" 
                         className={`${currentNavPage.name === category.name && 'navActive'
                             }`}
                         key={category.name}
@@ -51,7 +51,9 @@ function Nav(props) {
                     </li>
                 ))}
             </ul>
-        </nav>
+        
+       </div>
+       </nav>
     );
 }
 
