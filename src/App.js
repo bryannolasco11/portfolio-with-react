@@ -53,7 +53,10 @@ const [currentPage, setCurrentPage] = useState('About');
 
   return (
 
-    <div style={{ width: "100%" }}>
+    <div style={{ 
+      width: "100%",
+      backgroundColor: '#0a1045' 
+      }}>
       <Header
         
         setCurrentPage = {setCurrentPage}
