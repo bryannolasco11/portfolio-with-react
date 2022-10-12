@@ -7,10 +7,19 @@ import React from 'react';
 const Modal = ({ onClose, currentProject }) => {
     console.log(currentProject)
     const { id, name, description, githubLink, website } = currentProject;
+    
+    const openGithub = url => {
+        window.open(url, '_blank', 'noopener,noreferrer');
+    };
+
+    const openWebsite = url => {
+        window.open(url, '_blank', 'noopener,noreferrer');
+    };
+    
     return (
         // JSX
         <div className="modalBackdrop">
-            <div className='modalContainer'>
+            <div class="modal" id="modal" className='modalContainer'>
                 <h3 className="modalTitle">{name}</h3>
                 <li key={id}>
                     <img
@@ -21,9 +30,10 @@ const Modal = ({ onClose, currentProject }) => {
                     />
                 </li>
                 <p>{description}</p>
-                <p>{githubLink}</p>
-                <p>{website}</p>
-                <button type="button" onClick={onClose}>
+                <button className= "button" onClick={() => openGithub(`${githubLink}`)}>GitHub Repository</button>
+                    <button className= "button" onClick={() => openWebsite(`${website}`)}>Website/Youtube Video</button>
+                
+                <button className="button" type="button" onClick={onClose}>
                     Close this modal
                 </button>
             </div>

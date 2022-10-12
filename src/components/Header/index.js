@@ -9,7 +9,7 @@ function Header(props) {
     } = props;
 
     return (
-        <header>
+        <header className='flex-row px-1' style={{ background: "#8DA9c4" }}>
             <h1>
                 <a href="/">
                     🏀 Bryan Nolasco 🏀

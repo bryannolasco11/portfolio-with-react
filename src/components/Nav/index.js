@@ -6,17 +6,19 @@ function Nav (props) {
     const [navPage] = useState([
         {
             name: 'About',
-            
+            title: '🏀About'
         },
         {
-           
-            name: 'Portfolio'
+            name: 'Portfolio',
+            title: '🏀Portfolio'
         },
         {
-            name: 'Contact'
+            name: 'Contact',
+            title: '🏀Contact'
         },
         {
-           name: 'Resume'
+           name: 'Resume',
+           title: '🏀Resume🏀'
         }
 
 
@@ -32,11 +34,11 @@ function Nav (props) {
 
     return (
         <nav bg="dark" variant="dark">
-         <div class="container-fluid">
-         <ul class="nav navbar-nav">
+         <div className="container-fluid">
+         <ul className='flex-row'>
                 {navPage.map((category) => (
                     < li
-                    class="nav-link active" 
+                    
                         className={`${currentNavPage.name === category.name && 'navActive'
                             }`}
                         key={category.name}
@@ -46,7 +48,7 @@ function Nav (props) {
                                 setCurrentNavPage(category);
                                 setCurrentPage(category.name);
                         }}>
-                            {category.name}
+                            {category.title}
                         </span>
                     </li>
                 ))}
