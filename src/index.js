@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = document.getElementById('root');
-render(<App style={{ background: "0a1045"}}/>, root); 
+render(<App style={{ background: "0a1045" }} />, root);
 
 // 
 // If you want to start measuring performance in your app, pass a function

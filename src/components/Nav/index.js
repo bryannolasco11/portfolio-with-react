@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-function Nav (props) {
+function Nav(props) {
     console.log(props)
     const [navPage] = useState([
         {
@@ -17,8 +17,8 @@ function Nav (props) {
             title: '🏀Contact'
         },
         {
-           name: 'Resume',
-           title: '🏀Resume🏀'
+            name: 'Resume',
+            title: '🏀Resume🏀'
         }
 
 
@@ -34,28 +34,28 @@ function Nav (props) {
 
     return (
         <nav bg="dark" variant="dark">
-         <div className="container-fluid">
-         <ul className='flex-row'>
-                {navPage.map((category) => (
-                    < li
-                    
-                        className={`${currentNavPage.name === category.name && 'navActive'
-                            }`}
-                        key={category.name}
-                    >
-                        <span 
-                            onClick={() => {
-                                setCurrentNavPage(category);
-                                setCurrentPage(category.name);
-                        }}>
-                            {category.title}
-                        </span>
-                    </li>
-                ))}
-            </ul>
-        
-       </div>
-       </nav>
+            <div className="container-fluid">
+                <ul className='flex-row'>
+                    {navPage.map((category) => (
+                        < li
+
+                            className={`${currentNavPage.name === category.name && 'navActive'
+                                }`}
+                            key={category.name}
+                        >
+                            <span
+                                onClick={() => {
+                                    setCurrentNavPage(category);
+                                    setCurrentPage(category.name);
+                                }}>
+                                {category.title}
+                            </span>
+                        </li>
+                    ))}
+                </ul>
+
+            </div>
+        </nav>
     );
 }
 

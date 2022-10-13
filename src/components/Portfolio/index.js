@@ -59,35 +59,35 @@ function Portfolio(props) {
     return (
 
         <section>
-            
+
             {isModalOpen && (
                 <Modal onClose={toggleModal} currentProject={currentProject} />
             )}
             <div>
-            
+
                 <ul>
                     {currentProjects.map((project) => {
                         return (
                             <div>
-                            <li>
-                                <h3>{project.name}</h3>
+                                <li>
+                                    <h3>{project.name}</h3>
 
-                                <img
-                                    src={require(`../../assets/images/projectScreenshots/${project.id}.png`)}
-                                    alt={project.name}
-                                    className="img-thumbnail mx-1"
-                                    onClick={() => toggleModal(project)}
-                                    key={project.id}
-                                    width="300"
-                                    height="169"
-                                />
-                            </li>
-</div>
+                                    <img
+                                        src={require(`../../assets/images/projectScreenshots/${project.id}.png`)}
+                                        alt={project.name}
+                                        className="img-thumbnail mx-1"
+                                        onClick={() => toggleModal(project)}
+                                        key={project.id}
+                                        width="300"
+                                        height="169"
+                                    />
+                                </li>
+                            </div>
                         )
                     })}
 
                 </ul>
-            
+
             </div>
         </section>
     );

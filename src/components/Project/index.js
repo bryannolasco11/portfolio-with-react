@@ -7,7 +7,7 @@ import React from 'react';
 const Modal = ({ onClose, currentProject }) => {
     console.log(currentProject)
     const { id, name, description, githubLink, website } = currentProject;
-    
+
     const openGithub = url => {
         window.open(url, '_blank', 'noopener,noreferrer');
     };
@@ -15,7 +15,7 @@ const Modal = ({ onClose, currentProject }) => {
     const openWebsite = url => {
         window.open(url, '_blank', 'noopener,noreferrer');
     };
-    
+
     return (
         // JSX
         <div className="modalBackdrop">
@@ -31,14 +31,14 @@ const Modal = ({ onClose, currentProject }) => {
                 </li>
                 <p>{description}</p>
                 <div className='flex-row space-between'>
-                
-                <button className= "button" onClick={() => openGithub(`${githubLink}`)}>GitHub Repository</button>
-                    <button className= "button" onClick={() => openWebsite(`${website}`)}>Website</button>
-                <button className="button" type="button" onClick={onClose}>
-               Return to Portfolio
-                </button>
-                
-                    
+
+                    <button className="button" onClick={() => openGithub(`${githubLink}`)}>GitHub Repository</button>
+                    <button className="button" onClick={() => openWebsite(`${website}`)}>Website</button>
+                    <button className="button" type="button" onClick={onClose}>
+                        Return to Portfolio
+                    </button>
+
+
                 </div>
             </div>
 

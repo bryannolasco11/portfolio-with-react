@@ -16,44 +16,44 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
-  
-  
 
 
-const [currentPage, setCurrentPage] = useState('About');
+
+
+  const [currentPage, setCurrentPage] = useState('About');
 
 
   return (
 
-    <div style={{ 
+    <div style={{
       width: "100%",
-      backgroundColor: '#0a1045' 
-      }}>
+      backgroundColor: '#0a1045'
+    }}>
       <Header
-        
-        setCurrentPage = {setCurrentPage}
-        currentPage = {currentPage}
-        >
+
+        setCurrentPage={setCurrentPage}
+        currentPage={currentPage}
+      >
       </Header>
-      <main style={{ background: "0a1045"}}>
-      <div id="page-container">
-        <div id="content-wrap">
-         {currentPage === 'About' ? (
-               <About ></About>
-             ) : currentPage === 'Portfolio' ? (
-               <Portfolio />
-             ) : currentPage === 'Contact' ? (
-               <Contact></Contact>
-             ) : (
-               <Resume></Resume>
-             )
+      <main style={{ background: "0a1045" }}>
+        <div id="page-container">
+          <div id="content-wrap">
+            {currentPage === 'About' ? (
+              <About ></About>
+            ) : currentPage === 'Portfolio' ? (
+              <Portfolio />
+            ) : currentPage === 'Contact' ? (
+              <Contact></Contact>
+            ) : (
+              <Resume></Resume>
+            )
             }
-            </div>
-            </div>
+          </div>
+        </div>
       </main>
       <Footer id="footer"></Footer>
-      </div>
-    
+    </div>
+
   );
 }
 
