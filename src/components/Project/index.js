@@ -19,7 +19,7 @@ const Modal = ({ onClose, currentProject }) => {
     return (
         // JSX
         <div className="modalBackdrop">
-            <div class="modal" id="modal" className='modalContainer'>
+            <div className='modalContainer'>
                 <h3 className="modalTitle">{name}</h3>
                 <li key={id}>
                     <img
@@ -30,12 +30,16 @@ const Modal = ({ onClose, currentProject }) => {
                     />
                 </li>
                 <p>{description}</p>
-                <button className= "button" onClick={() => openGithub(`${githubLink}`)}>GitHub Repository</button>
-                    <button className= "button" onClick={() => openWebsite(`${website}`)}>Website/Youtube Video</button>
+                <div className='flex-row space-between'>
                 
+                <button className= "button" onClick={() => openGithub(`${githubLink}`)}>GitHub Repository</button>
+                    <button className= "button" onClick={() => openWebsite(`${website}`)}>Website</button>
                 <button className="button" type="button" onClick={onClose}>
-                    Close this modal
+               Return to Portfolio
                 </button>
+                
+                    
+                </div>
             </div>
 
         </div>

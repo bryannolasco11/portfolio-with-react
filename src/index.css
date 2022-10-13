@@ -1,9 +1,3 @@
-main {
-	margin: 0 auto;
-	max-width: 90%;
-  padding: 50px 30px;
-}
-
 :root {
   --blue: #0a1045;
   --babyblue: #00858f;
@@ -11,17 +5,13 @@ main {
   --white: #ebe8e6
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; 
- }
-
- html, body {
-  height: 100%;
-  width: 100%;
-}
 main {
+	margin: 0 auto;
+	max-width: 90%;
+  padding: 50px 30px;
+}
+
+body {
   margin: 0;
   padding: 0;
   font-weight: 600;
@@ -30,7 +20,46 @@ main {
   letter-spacing: .1em;
   background: var(--blue);
   color: var(--babyblue);
-  font-family: 'Poiret One', cursive;
+  font-family: "fantasy";
+
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+ }
+
+ html,
+ body {
+   min-height: 100%;
+ }
+main {
+  margin: 5;
+  padding: 0;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 18px;
+  letter-spacing: .1em;
+  background: var(--blue);
+  color: var(--babyblue);
+  font-family: American Typewriter, serif;
 
 }
 
