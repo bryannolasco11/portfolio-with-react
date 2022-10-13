@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/portoliowithreact/static/css/main.915f9a8b.css",
-    "main.js": "/portoliowithreact/static/js/main.2d30e5ee.js",
-    "static/js/787.51ee14cf.chunk.js": "/portoliowithreact/static/js/787.51ee14cf.chunk.js",
-    "static/media/6.png": "/portoliowithreact/static/media/6.386a0f604a6d604da9a1.png",
-    "static/media/5.png": "/portoliowithreact/static/media/5.f1d14393b9ad0f0f6918.png",
-    "static/media/1.png": "/portoliowithreact/static/media/1.3f8e1dd75a4c214e756c.png",
-    "static/media/3.png": "/portoliowithreact/static/media/3.ccb741fc7621997651e3.png",
-    "static/media/4.png": "/portoliowithreact/static/media/4.c6a2782d198047423bfc.png",
-    "static/media/Resume.png": "/portoliowithreact/static/media/Resume.a9ad96098e81da70ee18.png",
-    "static/media/2.png": "/portoliowithreact/static/media/2.8031d29355d9901b7f1c.png",
-    "static/media/glyphicons-halflings-regular.svg": "/portoliowithreact/static/media/glyphicons-halflings-regular.060b2710bdbbe3dfe48b.svg",
-    "static/media/Bryan_Nolasco_Resume.pdf": "/portoliowithreact/static/media/Bryan_Nolasco_Resume.abd1ceb7c0a4e341e5e9.pdf",
-    "static/media/glyphicons-halflings-regular.ttf": "/portoliowithreact/static/media/glyphicons-halflings-regular.4692b9ec53fd5972caa2.ttf",
-    "static/media/glyphicons-halflings-regular.woff": "/portoliowithreact/static/media/glyphicons-halflings-regular.82b1212e45a2bc35dd73.woff",
-    "static/media/glyphicons-halflings-regular.eot": "/portoliowithreact/static/media/glyphicons-halflings-regular.5be1347c682810f199c7.eot",
-    "static/media/glyphicons-halflings-regular.woff2": "/portoliowithreact/static/media/glyphicons-halflings-regular.be810be3a3e14c682a25.woff2",
-    "static/media/Profile.jpg": "/portoliowithreact/static/media/Profile.e9b0de66de33f68232ee.jpg",
-    "index.html": "/portoliowithreact/index.html",
-    "main.915f9a8b.css.map": "/portoliowithreact/static/css/main.915f9a8b.css.map",
-    "main.2d30e5ee.js.map": "/portoliowithreact/static/js/main.2d30e5ee.js.map",
-    "787.51ee14cf.chunk.js.map": "/portoliowithreact/static/js/787.51ee14cf.chunk.js.map"
+    "main.css": "/portolio-with-react/static/css/main.400016ff.css",
+    "main.js": "/portolio-with-react/static/js/main.9bf1c8eb.js",
+    "static/js/787.51ee14cf.chunk.js": "/portolio-with-react/static/js/787.51ee14cf.chunk.js",
+    "static/media/6.png": "/portolio-with-react/static/media/6.386a0f604a6d604da9a1.png",
+    "static/media/5.png": "/portolio-with-react/static/media/5.f1d14393b9ad0f0f6918.png",
+    "static/media/1.png": "/portolio-with-react/static/media/1.3f8e1dd75a4c214e756c.png",
+    "static/media/3.png": "/portolio-with-react/static/media/3.ccb741fc7621997651e3.png",
+    "static/media/4.png": "/portolio-with-react/static/media/4.c6a2782d198047423bfc.png",
+    "static/media/Resume.png": "/portolio-with-react/static/media/Resume.a9ad96098e81da70ee18.png",
+    "static/media/2.png": "/portolio-with-react/static/media/2.8031d29355d9901b7f1c.png",
+    "static/media/glyphicons-halflings-regular.svg": "/portolio-with-react/static/media/glyphicons-halflings-regular.060b2710bdbbe3dfe48b.svg",
+    "static/media/Bryan_Nolasco_Resume.pdf": "/portolio-with-react/static/media/Bryan_Nolasco_Resume.abd1ceb7c0a4e341e5e9.pdf",
+    "static/media/glyphicons-halflings-regular.ttf": "/portolio-with-react/static/media/glyphicons-halflings-regular.4692b9ec53fd5972caa2.ttf",
+    "static/media/glyphicons-halflings-regular.woff": "/portolio-with-react/static/media/glyphicons-halflings-regular.82b1212e45a2bc35dd73.woff",
+    "static/media/glyphicons-halflings-regular.eot": "/portolio-with-react/static/media/glyphicons-halflings-regular.5be1347c682810f199c7.eot",
+    "static/media/glyphicons-halflings-regular.woff2": "/portolio-with-react/static/media/glyphicons-halflings-regular.be810be3a3e14c682a25.woff2",
+    "static/media/Profile.jpg": "/portolio-with-react/static/media/Profile.e9b0de66de33f68232ee.jpg",
+    "index.html": "/portolio-with-react/index.html",
+    "main.400016ff.css.map": "/portolio-with-react/static/css/main.400016ff.css.map",
+    "main.9bf1c8eb.js.map": "/portolio-with-react/static/js/main.9bf1c8eb.js.map",
+    "787.51ee14cf.chunk.js.map": "/portolio-with-react/static/js/787.51ee14cf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.915f9a8b.css",
-    "static/js/main.2d30e5ee.js"
+    "static/css/main.400016ff.css",
+    "static/js/main.9bf1c8eb.js"
   ]
 }
