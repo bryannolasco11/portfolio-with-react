@@ -25,7 +25,7 @@ function Nav(props) {
     ]);
 
     const {
-        currentPage,
+        
         setCurrentPage,
 
     } = props;

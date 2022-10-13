@@ -1,5 +1,5 @@
 import React from 'react';
-import githubPng from '../../assets/images/social/GitHub-Mark-32px.png'
+
 
 function Footer() {
 
