@@ -15,9 +15,9 @@ function Portfolio(props) {
         },
         {
             id: 2,
-            name: "Sinato",
-            description: "This application is a social media site for music. Users can post about what song they're listening to and a caption on their thoughts. Others can add to the conversation by posting comments and using emojis. Made with Express servers and sessions, this is a great place for music lovers!",
-            githubLink: "https://github.com/bryannolasco11/sinato",
+            name: "BIOS",
+            description: "This application is a planner where Users can add Todos and assign values od daily, weekly, monthly or yearly.  In the future, a budget will be added.",
+            githubLink: "https://github.com/oceanlatte/bios-planner",
             website: "https://sinato.herokuapp.com/"
         },
         {
